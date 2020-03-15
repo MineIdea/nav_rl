@@ -1,0 +1,2 @@
+model_checkpoint_path: "PPO_model.ckpt-0"
+all_model_checkpoint_paths: "PPO_model.ckpt-0"

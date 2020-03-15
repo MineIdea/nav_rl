@@ -3,7 +3,7 @@
   <arg name="maze_id" default="1" />
 
   <!-- 设置launch文件参数 -->
-  <arg name="world_name" value="$(find rl_nav)/worlds/maze$(arg maze_id).world" />
+  <arg name="world_name" value="$(find nav_rl)/worlds/maze$(arg maze_id).world" />
   <arg name="paused" default="false"/>
   <arg name="use_sim_time" default="true" />
   <arg name="gui" default="true" />
@@ -22,7 +22,7 @@
 
   <!-- 加载机器人模型描述参数 -->
   <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find
-        turtlebot_description)/robots/kobuki_hexagons_kinect.urdf.xacro'" />
+        turtlebot_description)/robots/kobuki_hexagons_KinectHokuyo.urdf.xacro'" />
 
   <!-- 运行joint_state_publisher节点，发布机器人的关节状态 -->
   <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
